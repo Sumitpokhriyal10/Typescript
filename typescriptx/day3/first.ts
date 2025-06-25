@@ -94,6 +94,10 @@ placeorder(10,(amount)=>{
 })
 
 //rest parameter
-function total(){
-    
+function total(...arr1:number[]){
+ let ans:number =0;
+ arr1.forEach((val)=>ans=ans+val);
+ console.log(ans);
 }
+
+total(2,34,5,6,7,23);
